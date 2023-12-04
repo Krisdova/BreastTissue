@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -140,6 +140,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
@@ -170,6 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>DRIVE</strong></a></li>
+
 
 
 
@@ -328,6 +330,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -337,6 +340,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -403,14 +407,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-akurasi-4-model"><strong>1. Perbandingan Akurasi 4 Model</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-k-nearest-neighbors"><strong>KNN (K-NEAREST NEIGHBORS)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-tree"><strong>DECISION TREE</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>RANDOM FOREST</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes"><strong>NAIVE BAYES</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>RANDOM FOREST</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes"><strong>NAIVE BAYES</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-terbaik"><strong>PEMILIHAN MODEL TERBAIK</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-terbaik"><strong>2. PEMILIHAN MODEL TERBAIK</strong></a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model"><strong>EVALUASI MODEL</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#akses-streamlit"><strong>AKSES STREAMLIT</strong></a></li>
 </ul>
 
             </nav>
@@ -2921,9 +2926,8 @@ K terbaik : 1 dengan akurasi : 0.7647058823529411
 </div>
 </div>
 </section>
-</section>
 <section id="random-forest">
-<h2><strong>RANDOM FOREST</strong><a class="headerlink" href="#random-forest" title="Permalink to this heading">#</a></h2>
+<h3><strong>RANDOM FOREST</strong><a class="headerlink" href="#random-forest" title="Permalink to this heading">#</a></h3>
 <p>Random Forest adalah salah satu algoritma machine learning yang menggunakan konsep ensemble learning untuk meningkatkan kinerja prediksi dan mengurangi overfitting. Random Forest menggabungkan sejumlah besar pohon keputusan (Decision Trees) yang bekerja bersama untuk membuat prediksi yang lebih akurat dan stabil. \</p>
 <p>Mari kita fokus pada beberapa langkah penting dalam proses pembentukan Random Forest:</p>
 <ol class="arabic simple">
@@ -3101,7 +3105,7 @@ Akurasi terbaik: 0.8235294117647058
 </div>
 </section>
 <section id="naive-bayes">
-<h2><strong>NAIVE BAYES</strong><a class="headerlink" href="#naive-bayes" title="Permalink to this heading">#</a></h2>
+<h3><strong>NAIVE BAYES</strong><a class="headerlink" href="#naive-bayes" title="Permalink to this heading">#</a></h3>
 <p>Naive Bayes adalah metode yang bekerja dengan mengasumsikan independensi antara fitur-fitur dalam data, meskipun seringkali asumsi ini tidak sepenuhnya sesuai dengan kondisi dunia nyata. Meskipun begitu, metode ini sering memberikan hasil yang baik, khususnya dalam kasus-kasus yang melibatkan dataset yang besar. \</p>
 <p>Cara kerja metode Naive Bayes adalah sebagai berikut : \</p>
 <ol class="arabic simple">
@@ -3152,8 +3156,9 @@ Setelah menghitung probabilitas posterior untuk setiap kelas, Naive Bayes memili
 </div>
 </div>
 </section>
+</section>
 <section id="pemilihan-model-terbaik">
-<h2><strong>PEMILIHAN MODEL TERBAIK</strong><a class="headerlink" href="#pemilihan-model-terbaik" title="Permalink to this heading">#</a></h2>
+<h2><strong>2. PEMILIHAN MODEL TERBAIK</strong><a class="headerlink" href="#pemilihan-model-terbaik" title="Permalink to this heading">#</a></h2>
 <p>Dengan dijalankannya keempat model di atas, yakni : \</p>
 <ul class="simple">
 <li><p>KNN \</p></li>
@@ -3297,6 +3302,13 @@ weighted avg       0.82      0.82      0.82        17
 </div>
 </div>
 </section>
+<section id="akses-streamlit">
+<h1><strong>AKSES STREAMLIT</strong><a class="headerlink" href="#akses-streamlit" title="Permalink to this heading">#</a></h1>
+<p>Berikut adalah link untuk anda bisa mengakses aplikasi model streamlit.<br />
+Anda bisa menekan link di bawah ini : <br />
+<a class="reference external" href="https://appbreasttissue.streamlit.app/">https://appbreasttissue.streamlit.app/</a></p>
+<p><strong>Catatan :</strong> Jika terjadi masalah dengan keterangan ‘file sleeping’, anda bisa menekan wakeup/okey dan menunggu beberapa saat agar aplikasi bisa diakses kembali. Terimakasih.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -3326,7 +3338,7 @@ weighted avg       0.82      0.82      0.82        17
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="intro.html"
@@ -3387,14 +3399,15 @@ weighted avg       0.82      0.82      0.82        17
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-akurasi-4-model"><strong>1. Perbandingan Akurasi 4 Model</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-k-nearest-neighbors"><strong>KNN (K-NEAREST NEIGHBORS)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decision-tree"><strong>DECISION TREE</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>RANDOM FOREST</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes"><strong>NAIVE BAYES</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest"><strong>RANDOM FOREST</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes"><strong>NAIVE BAYES</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-terbaik"><strong>PEMILIHAN MODEL TERBAIK</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-terbaik"><strong>2. PEMILIHAN MODEL TERBAIK</strong></a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model"><strong>EVALUASI MODEL</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#akses-streamlit"><strong>AKSES STREAMLIT</strong></a></li>
 </ul>
 
   </nav></div>
@@ -3417,6 +3430,7 @@ By The Jupyter Book Community
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -3443,8 +3457,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
